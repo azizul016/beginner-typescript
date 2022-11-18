@@ -1,3 +1,4 @@
+"use strict";
 // class Player {
 //   private name: string; //not change beside class and not accessable beside class
 //   age: number;
@@ -22,23 +23,47 @@
 //     console.log(this.name + " plays: " + this.age + this.country);
 //   }
 // }
-import { Player } from "./moduleInportExport.js";
-const rahim = new Player("rahim", 32, "bangladesh");
-const karim = new Player("karim", 42, "india");
-// console.log(karim.name);
-// console.log(rahim.play());
-// // console.log(karim.play());
-let players = [];
-players.push(karim);
-players.push(rahim);
-function DrawRectangle3(option) {
-    let length = option.length;
-    let width = option.width;
-    console.log(length, width);
-}
-let option = {
-    length: 23,
-    width: 22,
-    height: 22,
-};
-DrawRectangle3(option);
+// import { Player } from "./moduleInportExport.js";
+// const rahim = new Player("rahim", 32, "bangladesh");
+// const karim = new Player("karim", 42, "india");
+// // console.log(karim.name);
+// // console.log(rahim.play());
+// // // console.log(karim.play());
+// let players: Player[] = [];
+// players.push(karim);
+// players.push(rahim);
+// // console.log(players);
+// //one way;
+// // function DrawRectangle(option: { width: number; length: number }) {
+// //   let length = option.length;
+// //   let width = option.width;
+// // }
+// // DrawRectangle({ width: 10, length: 10 });
+// //second way;
+// // interface RectangleOptions {
+// //   width: number;
+// //   length: number;
+// // }
+// // function DrawRectangle2(option: RectangleOptions) {
+// //   let length = option.length;
+// //   let width = option.width;
+// // }
+// // console.log({ width: 10, length: 10 });
+// // third way
+// interface RectangleOptions {
+//   width: number;
+//   length: number;
+// }
+// function DrawRectangle3(option: RectangleOptions) {
+//   let length = option.length;
+//   let width = option.width;
+//   console.log(length, width);
+// }
+// let option = {
+//   length: 23,
+//   width: 22,
+//   height: 22,
+// };
+// DrawRectangle3(option);
+//generic way;
+//enum type;

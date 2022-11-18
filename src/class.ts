@@ -24,57 +24,62 @@
 //   }
 // }
 
-import { Player } from "./moduleInportExport.js";
+// import { Player } from "./moduleInportExport.js";
 
-const rahim = new Player("rahim", 32, "bangladesh");
-const karim = new Player("karim", 42, "india");
-// console.log(karim.name);
-// console.log(rahim.play());
-// // console.log(karim.play());
+// const rahim = new Player("rahim", 32, "bangladesh");
+// const karim = new Player("karim", 42, "india");
+// // console.log(karim.name);
+// // console.log(rahim.play());
+// // // console.log(karim.play());
 
-let players: Player[] = [];
-players.push(karim);
-players.push(rahim);
-// console.log(players);
+// let players: Player[] = [];
+// players.push(karim);
+// players.push(rahim);
+// // console.log(players);
 
-//one way;
-// function DrawRectangle(option: { width: number; length: number }) {
-//   let length = option.length;
-//   let width = option.width;
-// }
+// //one way;
+// // function DrawRectangle(option: { width: number; length: number }) {
+// //   let length = option.length;
+// //   let width = option.width;
+// // }
 
-// DrawRectangle({ width: 10, length: 10 });
+// // DrawRectangle({ width: 10, length: 10 });
 
-//second way;
+// //second way;
 
+// // interface RectangleOptions {
+// //   width: number;
+// //   length: number;
+// // }
+
+// // function DrawRectangle2(option: RectangleOptions) {
+// //   let length = option.length;
+// //   let width = option.width;
+// // }
+
+// // console.log({ width: 10, length: 10 });
+
+// // third way
 // interface RectangleOptions {
 //   width: number;
 //   length: number;
 // }
 
-// function DrawRectangle2(option: RectangleOptions) {
+// function DrawRectangle3(option: RectangleOptions) {
 //   let length = option.length;
 //   let width = option.width;
+//   console.log(length, width);
 // }
 
-// console.log({ width: 10, length: 10 });
+// let option = {
+//   length: 23,
+//   width: 22,
+//   height: 22,
+// };
 
-// third way
-interface RectangleOptions {
-  width: number;
-  length: number;
-}
+// DrawRectangle3(option);
 
-function DrawRectangle3(option: RectangleOptions) {
-  let length = option.length;
-  let width = option.width;
-  console.log(length, width);
-}
 
-let option = {
-  length: 23,
-  width: 22,
-  height: 22,
-};
+//generic way;
 
-DrawRectangle3(option);
+//enum type;
